@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ryan's 21st Birthday</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;600&family=Fraunces:opsz,wght@9..144,700;9..144,900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div id="rain"></div>
+  <div id="balloons"></div>
+  <canvas id="fireworks"></canvas>
+
+  <main>
+
+    <!-- PAGE 1: invite -->
+    <section id="page-invite" class="page active">
+      <div class="foil" aria-label="21"><span>2</span><span>1</span></div>
+      <h1>Ryan's 21st Birthday</h1>
+      <p class="lead">Everyone is invited.<br>So... are you coming?</p>
+      <div class="buttons">
+        <button id="btn-yes" class="btn yes">Yes, count me in!</button>
+        <button id="btn-no" class="btn no">No, I can't make it</button>
+      </div>
+    </section>
+
+    <!-- PAGE 2: yes -->
+    <section id="page-yes" class="page">
+      <h2>See y'all there! 🎉</h2>
+      <div class="card">
+        <div class="row"><span class="label">Where</span><span class="value">Sunway Mentari Bamboo House</span></div>
+        <div class="row"><span class="label">When</span><span class="value">7:00 PM</span></div>
+      </div>
+      <p class="note">Please PM Teng Wai on WhatsApp to confirm you're coming.</p>
+      <a id="pm-link" class="btn yes" target="_blank" rel="noopener" hidden>Message on WhatsApp</a>
+      <figure class="qr">
+        <img src="contact-qr.jpg" alt="WhatsApp QR code for Teng Wai">
+        <figcaption>On a computer? Scan this with the WhatsApp camera.</figcaption>
+      </figure>
+      <button id="celebrate" class="btn ghost">More fireworks!</button>
+    </section>
+
+    <!-- PAGE 3: no -->
+    <section id="page-no" class="page">
+      <div class="sad-face">🥲</div>
+      <h2>Alright then...</h2>
+      <p class="lead">We'll miss you. See you again next time.</p>
+      <button id="btn-back" class="btn ghost">Wait, I changed my mind</button>
+    </section>
+
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
